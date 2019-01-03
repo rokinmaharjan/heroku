@@ -20,6 +20,7 @@ public class UserService {
 	}
 
 	public User saveUser(User user) {
+		System.err.println("POST API for users called");
 		return this.userRepository.save(user);
 	}
 
