@@ -15,6 +15,7 @@ public class UserService {
 	private UserRepository userRepository;
 
 	public List<User> getUsers() {
+		System.err.println("GET API for users called");
 		return this.userRepository.findAll();
 	}
 
